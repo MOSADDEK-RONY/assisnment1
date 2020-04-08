@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	background: url(img.JPEG) no-repeat;
+	background-size:cover;
+	height:100vh;
+
+}
+.navbar{
+	height:80px;
+	width:100%;
+	background: rgba(0,0,0,0.4);
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+	
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px; 	
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	padding: 6px 13px;
+	font-family: 'Roboto',sans-serif;
+	transition: .4s;
+	
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.center h1{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	width: 900px;
+	text-align: center;
+}
+.center .buttons{
+	margin: 35px 280px;
+}
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffb3b3;
+	background: red;
+	border: 1px solid #cc000;
+	outline: none;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: .5s
+}
+.buttons .btn{
+	margin-left: 25pX;
+}
+.buttons button:hover{
+	background: #cc0000;
+}
+.color-change{
+    animation: colorChange 2s infinite;
+}
+@keyframes colorChange{
+    0%{color: yellow;}
+    25%{color: orangered;}
+    50%{color: tomato;}
+    75%{color: turquoise;}
+    100%{color: yellow;}
+}
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: tomato;
+    padding: 30px;
+    margin: 50px;
+    box-shadow: 2px 4px 10px;
+    border-radius: 5px;
+}
+
+footer{
+    height: 200px;
+    background-color: black;
+    border-top: 2px solid tomato;
+    color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
